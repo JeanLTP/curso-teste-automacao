@@ -1,7 +1,6 @@
-#s = 'teste'
-#puts 'testando' + s
-#puts 'testando' << s
+#INTERPOLAÇÃO - JUNÇÃO
 
+#ex:
 i = 2
 s = 'total é'
 

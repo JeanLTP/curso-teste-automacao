@@ -1,3 +1,5 @@
+#CONVERSÃO
+
 =begin
 to_i #converte a variável para inteiro
 to_f #converte a variável para float
