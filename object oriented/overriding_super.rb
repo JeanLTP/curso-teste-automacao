@@ -12,13 +12,27 @@ class ClasseMae
     end
 end
 
+#class ClasseFilha < ClasseMae
+#    def correr
+#        puts 'A filha corre'
+#    end
+#end
+
+#object = ClasseFilha.new
+
+#Como eu subscrevi o método correr ele vai retornar o que foi definido na classe filha
+#object.correr
+
+#SUPER
+#Serve basicmente para invocar o método correspondente da classe pai
+
 class ClasseFilha < ClasseMae
     def correr
-        puts 'A filha corre'
+        puts super
+        puts "A filha também corre"
     end
 end
 
 object = ClasseFilha.new
-
-#Como eu subscrevi o método correr ele vai retornar o que foi definido na classe filha
+#retona tanto o que está na classe mãe quanto o que foi adicionado
 object.correr
