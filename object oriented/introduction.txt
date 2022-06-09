@@ -1,0 +1,25 @@
+Classe: Cachorro
+Variáveis:
+    Tamanho = int
+    Raça = string
+Metódos:
+    Latir ()
+
+Exemplo SuperClasse
+
+SuperClasse = Animal
+SubClasses = Quadrúpedes, aquáticos, aves
+
+Encapsulamento
+
+Private - o membro não pode ser acessado fora da classe, nem mesmo por outras classes derivadas
+Protected - o memmbro não pode ser acessado fora da classe, porém o membro está disponível para
+outras classes derivadas da classe base.
+internal - o membro só é visível na unidade de código onde está definido. Éum meio termo entre
+public e Protected, uma vez que o membro pode ser acesso por todas as classes definidas na mesma
+unidade
+Protected-internal - combinação de protegidos e interno
+public - o membro é acessível fora da definição da classe
+
+
+
