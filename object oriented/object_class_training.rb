@@ -9,6 +9,3 @@ end
 
 object_method = Training.new
 object_method.method_write
-
-
-
