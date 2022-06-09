@@ -1,4 +1,4 @@
-#INTERPOLAÇÃO - JUNÇÃO
+#INTERPOLAÇÃO - JUNÇÃO STRING + INTEGER
 
 #ex:
 i = 2
