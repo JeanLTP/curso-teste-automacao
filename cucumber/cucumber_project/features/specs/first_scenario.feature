@@ -1,8 +1,5 @@
-Feature: Fazer uma soma.
+Feature: Fazer uma soma
 
-Eu como usuário quero fazer uma soma
-
-Scenario: Scenario name: Fazer uma soma.
-When eu somo 2 somo 2
-Then o resultado tem que ser 4
-
+    Scenario: Retornar a soma de dois números
+        When Eu somo 2 mais 2
+        Then  o resultado deve ser 4
