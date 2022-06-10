@@ -1,0 +1,12 @@
+#CUCUMBER
+
+=begin
+EX:
+Funcionalidade: Fazer login
+
+Cenário: Fazer login com sucesso
+Dado que eu tenho um usuário
+Quando faço login
+Então eu verifica se o login foi realizado com sucesso.
+
+=end
