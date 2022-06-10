@@ -8,7 +8,7 @@ ary.each do |i|
 end
 =end
 
-v = [1,2,7,8,9,3,4,5]
+v = [1,2,7,8,9,3,4,5,9]
 
 v.each do |i|
     puts i

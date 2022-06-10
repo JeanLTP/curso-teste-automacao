@@ -1,0 +1,4 @@
+source 'http://rubygems.org' #local onde fica todas as gems
+
+gem 'cucumber'
+gem 'rspec'
