@@ -32,3 +32,6 @@ p = Pessoa.new
 
 p.agarra_cachorro(c1)
 p.agarra_cachorro(c2)
+
+
+teste
