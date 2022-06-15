@@ -42,4 +42,27 @@ click_link_or_button - clica em links ou botões
 click_button - clica em botões encontrado pelo locator
 click_link - clica no link pelo id.texto ou title
 
+Formulários
+
+Comandos principais:
+
+
+find(elemento).set "campo a preencher"
+find(elemento).send_keys("campos a preencher")
+fill_in => localize um campo de texto ou área de teexto e preencha-o com o texto fornecido (o campo pode ser
+encontrado através do seu nome, id ou texto)
+
+Opções
+
+wait -tempo máximo de espera
+:with - o valor a preencher - obrigatório
+:fill_options - opções esecíficas do driver sobre como preencher campos
+:currently_with - a propriedade de valor atual do campo para preencher
+:multiple - corresponder campos que podem ter vários valores
+:id - corresponde a cmpos do atributo ID
+:name - corresponde a campos do atributo name
+:placeholder - corresponde a campos placeholder
+:class - corresponde a campos class
+
+
 
