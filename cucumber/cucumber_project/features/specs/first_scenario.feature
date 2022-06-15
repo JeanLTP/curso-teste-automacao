@@ -1,4 +1,4 @@
-@first
+@tag_first
 Feature: Fazer uma soma
 
     Scenario: Retornar a soma de dois números

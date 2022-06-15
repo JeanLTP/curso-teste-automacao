@@ -1,4 +1,4 @@
-@tag_scenario
+@tag_scenario_scheme
 Feature: Cálculo de multiplicação
 
     Scenario Outline: Fazer multiplicação

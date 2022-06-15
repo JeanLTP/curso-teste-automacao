@@ -1,0 +1,3 @@
+Configurando o Capybara
+
+Efetuamos a configuração dele no feature/support/env.rb

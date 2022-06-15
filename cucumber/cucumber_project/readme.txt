@@ -94,6 +94,35 @@ Um cenário ou uma funcionalidade podem ter várias TAGS
 
 Para chamar as tags :
 Cucumber -o -t @nome da tag
+ou
+cucumber -t "@nome da tag"
+
+HOOKS
+
+Permite executar blocos em vários pontos no ciclo de teste do cucumber.
+
+comando after no hooks: serão executados após a última etapa de cada cenário, mesmo quando houver etapas com falha,
+indefinida, pendente ou ignorada. Eles serão executados na ordem iversa da qual estão registrados.
+
+comando before: serão executados antes do primeiro passo de cada cenário. Eles serão executados na mesma ordem em que 
+estão registrados.
+
+A diferença entre Contexto (background) e Hooks é que o contexto roda antes de cada cenário dentro da funcionalidade
+que ele está. O hooks roda antes ou depois do projeto inteiro.
+
+Before e After global
+
+Hooks com tags:
+
+Isso é possível atráves da associação com o before, after, around ou afterstep hooks com uma ou mais tags.
+
+EX de hooks em hook_test.feature / rb e na pasta support hooks.rb
+
+Aqui voce pode usar o after e o before colocando uma tag neles
+
+
+
+
 
 
 

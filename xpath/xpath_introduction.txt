@@ -1,0 +1,14 @@
+Mapeando elementos
+
+EX:
+
+<p class ="important"> This is a paragraph </p>
+
+Start tag = <p>
+Attribute =  class
+Value = important
+Content = This is a paragraph
+end tag = </p>
+
+Instalado extensão do xpath helpes no google chrome.
+

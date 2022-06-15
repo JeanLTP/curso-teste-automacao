@@ -1,0 +1,21 @@
+EX:
+
+Seleção por classe ( .classe)
+
+Encontrar um elemento pelo nome da classe basta colocar o valor da classe com um ponto "." na frente ou 
+colocar a tag.classe.
+
+Seleção por ID (#identificador)
+Encontrar um elemento por ID basta colocar o valor do atributo IDcom um # na frente.
+
+Seleção por elementos (div)
+Seleciona todos os elementos <p> onde o pai é um leemento <div>.
+
+Seleção por atributo (elemento [atributo ="valor"])
+Seleciona todos os elementos com um elemento e um atributo distino
+
+Seleção por filho (:first-child)
+Seleciona o elemento <p> que é o primeiro filho do seu pai
+
+Seleção por primeiro elemento (:first-of-type)
+Seleciona o elemento <p> que é o primeiro elemento de seu pai

@@ -1,0 +1,45 @@
+Capybara
+
+É um framework de automação de testes em aplicações web. É utilizado para testar as aplicações sumulando as ações
+que os usuários reais executariam na aplicação.É necessário ter o Ruby instalado.
+
+Selenium webdriver
+
+É uma ferramenta livre para testes automatizados de aplicativos da web.
+
+Chromedriver
+É um servidor autônomo que implementa o protocolo de conexão do webdriver para o chromium.
+
+Buscando elementos na página:
+
+all ('elemento') - busca todos os elementos
+find ('elemento') - busca um elemento mapeado
+first ('elemento') - busca o primeiro elemento encontrado
+find_button - busca um botão na páginafind_link - busca um link na página
+find_by_id - busca o elemento com o ID mapeado
+
+Outras formas de fazer a busca de elementos: https://www.rubydoc.info/github/teamcapybara/capybara/master/capybara/node/finders
+
+Buscando opções:
+
+text (string, regexp) - busca por um texto exatamente igual ao preenchido
+exact_text (string, boolean) - busca uma string exatamente igual preenchida
+visible (boolean, symbol) - busca elementos que estão visível
+count (integer) - busca o número exato de elementos encontrados na tela
+maximum (integer) - busca o número máximo de elementos encontrados na tela
+minimum (integer) - busca o número mínimo de elementos encontrados na tela
+between (range) - busca o número de elementos encontrados em uma determinada range
+exact (boolean) - busca um elemento exatamente igual ao regex criado por um css ou xpath
+wait (integer, false) - espera o tempo delimitado para esperar o elemento aparecer na tela
+
+Clicando em buttons e links
+
+find(elemento).click
+find(elemento).double.click
+find(elemento.right)_click
+click_on - clica em links ou botões
+click_link_or_button - clica em links ou botões
+click_button - clica em botões encontrado pelo locator
+click_link - clica no link pelo id.texto ou title
+
+
