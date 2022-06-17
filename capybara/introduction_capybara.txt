@@ -15,7 +15,8 @@ Buscando elementos na página:
 all ('elemento') - busca todos os elementos
 find ('elemento') - busca um elemento mapeado
 first ('elemento') - busca o primeiro elemento encontrado
-find_button - busca um botão na páginafind_link - busca um link na página
+find_button - busca um botão na página
+find_link - busca um link na página
 find_by_id - busca o elemento com o ID mapeado
 
 Outras formas de fazer a busca de elementos: https://www.rubydoc.info/github/teamcapybara/capybara/master/capybara/node/finders
@@ -65,4 +66,103 @@ wait -tempo máximo de espera
 :class - corresponde a campos class
 
 
+DROPDOWN, SELECT E AUTOCOMPLETE
 
+Para usarmos o dropdown: 
+find(elemento).click
+
+Select : encontra uma caixa de seleção na página e seleciona uma opção específica delimitado
+Unselect : encontra uma caixa de seleção na página e desmarque uma opção específica dela 
+select_option : seleciona uma opção esecífica 
+
+Radiovox e checkbox
+
+find(elemento).click
+check - encontre uma caixa de seleção e marque-a como marcado
+choose - encontre um botão de opção e marque-o como marcado
+uncheck - encontre uma caixa de seleção e desmarque
+
+opções:
+
+id
+name
+class
+allow_label_click - tenta clicar no rótulo para alterar o estado se o elemento não estiver visível
+wait
+
+Verificando se um elemento existe na tela
+
+Assert
+
+assert_none_of_selector - afirma que não tenho nenhum dos seletores fornecidos está presente na página atual
+assert_matches_selector - afirma que ocurrent_node corresponde a um determinado seletor
+assert_text - afirma que a página atual corresponde a um determinado seletor
+
+Has
+
+has_select - verifica se a página tem um campo de seleão com o rótulo, o nome ou id fornecido
+has_table - verifica se a página possui uma tabela com o ID ou a legenda especificada
+has_text - verifica se a página tem o conteúdo de text especificado
+has_css - verifica se um determinado seletor de css está na página
+
+Matchers 
+
+matches_css - verifica se o nó atual corresponde ao seletor de css especificado
+matches_selector - verifica se o nó atual corresponde ao seletor especificado
+matches_xpath - verifica se o nó atual corresponde a determinada expressão xpath
+
+Rspec Matchers
+
+have_button - verifica se a página atual possui um botão com o texto, valor ou id especificado
+have_link - verifica se a página atual possui um link especificado
+have_text - verifica se a página atual possui um texto especificado
+have_title - verifica se a página atual possui um determinado título
+
+Verificando se um elemento NÃO existe na tela
+
+Assert
+
+assert_no_selector - afirma que não tenho nenhum dos seletores fornecidos está presente na página atual
+assert_no_matches_selector - afirma que ocurrent_node corresponde a um determinado seletor
+assert_no_text - afirma que a página atual não corresponde a um determinado seletor
+
+
+Has
+
+has_no_select - verifica se a página tem um campo de seleão com o rótulo, o nome ou id fornecido
+has_no_table - verifica se a página possui uma tabela com o ID ou a legenda especificada
+has_no_text - verifica se a página tem o conteúdo de text especificado
+has_no_css - verifica se um determinado seletor de css está na página
+
+Matchers 
+
+not_matches_css - verifica se o nó atual corresponde ao seletor de css especificado
+not_matches_selector - verifica se o nó atual corresponde ao seletor especificado
+not_matches_xpath - verifica se o nó atual corresponde a determinada expressão xpath
+
+Rspec Matchers
+
+not_have_button - verifica se a página atual possui um botão com o texto, valor ou id especificado
+not_have_link - verifica se a página atual possui um link especificado
+not_have_text - verifica se a página atual possui um texto especificado
+not_have_title - verifica se a página atual possui um determinado título
+
+
+Mouse hover
+
+find(elemento).hover - move o mouse até o elemento mapeado
+find(elemento).hover.click - move o mouse até o elemeento mapeado e depois clica
+
+Iframe e modal
+
+Muda o foco para o elemento mapeado
+
+within(elemento) do
+
+end 
+
+Muda o foco para o Iframe
+
+within_frame(elemento) do
+
+end
