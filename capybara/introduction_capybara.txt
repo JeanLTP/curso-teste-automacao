@@ -166,3 +166,64 @@ Muda o foco para o Iframe
 within_frame(elemento) do
 
 end
+
+Execute o bloco dado dentro de um determinado fieldset dado o ID ou legenda daquele fieldset
+
+within_fieldset(elemento) do
+
+end 
+
+Execute o bloco dado dentro de uma tabela específica, dado o id ou legenda dessa tabela
+within_table(elemento) do
+
+end
+
+JANELAS
+
+ within_window : altera para a janela fornecida executa o bloco especificado e retorna
+ switch_to_window : retorna a janela que foi trocada para a que desejamos
+ window_opened_by : obtem a janela que foi aberta pelo bloco passado (ex: quero abrir a janela que foi aberta por
+ um click)
+ current_window : retorna para a janela aberta
+ open_new_window : abre nova janela
+ windows : retorna todas as janelas abertas
+
+ opções
+
+ resize_to 800, 600 : aumenta o tamanho da tela com o tamanho desejado
+ .close : fecha a janela
+ .maximize : máximiza a janela
+ .size  : obtém o tamanho da janela
+ .current? : se esta janela é a janela na qual os comandos estão sendo executados
+ .closed? : verifica se a janela foi fechada/está fechada
+ .exists? : se a janela não está fechada
+
+
+ALERT
+
+accept_alert : execute o bloco aceitando um alerta
+accept_confirm : execute o bloco, aceitando uma confirmação
+dismiss_confirm : execute o bloqueio, dispensando uma confirmação
+accept_prompt : execute o bloco, aceitando um prompt, respondendo opcionalmente ao prompt
+dismiss_prompt : execute o bloco dispensando o prompt
+
+
+TRABALHANDO COM UPLOAD DE ARQUIVOS
+
+
+attach_file(elemento mapeado, caminho do arquivo, se necessário opções) : encontre um campo de arquivo na página
+e anexe um arquivo dado seu caminho
+
+opções:
+
+wait - tempo máximo para aguardar a exibição
+matches - estratégia correspondência a ser usada (:one, :first, :prefer_exact, :smart)
+exact - passa valor especifico
+multiple - campo de correspondência que permite a seleção de vários arquivos
+id 
+name
+:class
+make_visible - um hash de estilos css para alterar antes de tentar anexar o arquivo
+
+
+

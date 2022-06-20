@@ -2,7 +2,7 @@
 
 Feature: Verificando elementos visiveis na tela
 
-Scenario: Verifica se existe um elemento na página
+    Scenario: Verifica se existe um elemento na página
 
-When clico no botão
-Then verifico se o texto apareceu na tela com sucesso.
+        When clico no botão
+        Then verifico se o texto apareceu na tela com sucesso.
