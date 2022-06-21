@@ -225,5 +225,52 @@ name
 :class
 make_visible - um hash de estilos css para alterar antes de tentar anexar o arquivo
 
+SCRIPTS
 
+Execute o script fornecido, porém não retorna um resultado. Isso é útil para scriots que retornam objetos complexos
+como instruções jquery.
+
+EX:
+
+page.execute_script("$window.scrollby(0,550);")
+result = page.evaluate_script('4+4');
+
+Ele executa a ação/instrução mas não retorna nenhum valor
+
+
+KEYBORAD
+
+Funciona como o send_keys porém simula como se estivessemos digitando. É bem pouco usado.
+
+element.send_keys(tecla)
+
+:cancel
+:help
+:backspace
+:tab
+:clear
+:return
+:enter
+:shift
+:control
+:alt
+:pause
+:escape
+:space
+:page_up
+:f1
+:f2
+:f3
+.............................
+
+
+DRAG AND DROP
+
+elemento1 = page.find('#winston')
+elemento2 = page.find ('#dropzone')
+elemento1.drag_to(@elemento2)
+
+END TO END
+
+Consiste em rodar todos os testes sem a necessidade de resetar a sessão para cada cenário que for finalizado
 

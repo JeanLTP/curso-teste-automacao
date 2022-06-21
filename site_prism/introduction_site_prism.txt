@@ -1,0 +1,40 @@
+PAGE OBJECTS
+
+A proposta é criar um objeto para cada página web utilizando a orientação a objetos. Onde usamos o encapsulamento
+em cada classe, usando os atributos e métodos como campos e ações de cada página.
+
+Pasta 'pages' : utilizada para criar todos os page objects 
+
+Para criar um page objects
+
+class Nomedaclasse < siteprism:page
+
+#corpo da classe
+
+end
+
+Acessando o primeiro site_prism
+
+set_url : mapeia a url  
+@page.load : carrega a url que está mapeada no page objects
+
+set_url 'https://automacaocombatista.herokuapp.com/users/new'
+
+só pode ter um set_url por PO 
+
+MAPEANDO ELEMENTOS
+
+element: nomedoelemento, 'elemento mapeado'
+element: name, '#id'
+element: email, :xpath, 'input[@id="email_id"]'
+
+MAPEANDO LISTA DE ELEMENTOS
+
+elements: lista, 'elemento_mapeado'
+@pagelista.lista.size
+@pagelista.lista[0].text
+expect(@pagelista.lista.size).to eql "tamanho da lista"
+
+@pagelista.lista.each do |listas|
+    puts lista.text
+end

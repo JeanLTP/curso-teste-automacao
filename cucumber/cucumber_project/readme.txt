@@ -10,6 +10,21 @@ gemfile : onde instalamos as gem's que precisaremos para usar no projeto
 gem install cucumber : comando para instalação do cucumber
 gem install rspec : comando para instalar o rspec
 cucumber --init : cria um modelo de projeto cucumber
+cucumber --retry 2 : especificar o número de vezes para repetir os testes com falha
+cucumber --order random : defini que os cenários sejam executados de forma aleatória:
+cucumber --verbose : mostra todos os arquivos carregados durante a execução do teste. Desta forma é possível verificar quais arquivos
+estão sendo executados no momento deste teste. Abaixo segue um exemplo dos arquivos carregados ao executar
+um cenário da feature de login.
+
+
+CRIANDO UM PROJETO COM Cucumber
+
+cucumber --init
+create   features
+create   features/step_definitions
+create   features/support
+create   features/support/env.rb
+
 
 Após isso na pasta do projeto criar o arquivo gemfile e passar quais programas serão instalados
 Em seguida, no arquivo env.rb na pasta support passar o required cucumber

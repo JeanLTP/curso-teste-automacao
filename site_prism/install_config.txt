@@ -1,0 +1,14 @@
+Instalando o Site_Prism e criando PageObject
+
+Adicionar os comandos
+gem 'site_prism'
+
+E dar o require no env.rb 
+
+Require 'site_prism'
+
+
+
+
+
+

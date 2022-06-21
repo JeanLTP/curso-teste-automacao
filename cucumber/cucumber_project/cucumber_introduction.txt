@@ -10,3 +10,6 @@ Quando faço login
 Então eu verifica se o login foi realizado com sucesso.
 
 =end
+
+cucumber -d : Assim, não vai ser necessário aguardar o emulador ou browser iniciar e finalizar a execução dos
+testes, para somente depois gerar os snippets.
